@@ -1,13 +1,262 @@
-body {
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/src/fonts/SF-Pro-Display-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.app {
+  width: 1280px;
+  margin: 0 auto; 
+  position: relative;
+}
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+body *{
+  padding: 0;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+}
+header img{
+  position: absolute;
+  top: 8px;
+  left: 50px;
+}
+header .menu{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 368px;
+  height: 18px;
+  top: 26px;
+  left: 145px;
+}
+header .menu p{
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(40, 40, 40, 1);
+}
+.theatre{
+  position: absolute;
+  width: 1280px;
+  top: 71px;
+  z-index: -1;
+}
+.name{
+  position: absolute;
+  width: 585px;
+  height: 172px;
+  top: 378px;
+  left: 50px;
+  color: white;
+  font-family: SF Pro Display;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 85.92px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.theatre-info-background{
+  position: absolute;
+  width: 1280px;
+  height: 120px;
+  top: 600px;
+  background-color: white;
+}
+.theatre-info .h{
+  font-family: SF Pro Display;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.32px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;  
+}
+.theatre-info .info{
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.theatre-info .h1{
+  position: absolute;
+  top: 642px;
+  left: 50px;
+}
+.theatre-info .info1{
+  position: absolute;
+  top: 659px;
+  left: 50px;
+}
+.theatre-info .h2{
+  position: absolute;
+  top: 642px;
+  left: 213px;
+}
+.theatre-info .info2{
+  position: absolute;
+  top: 659px;
+  left: 213px;
+}
+.theatre-info .h3{
+  position: absolute;
+  top: 642px;
+  left: 417px;
+}
+.theatre-info .info3{
+  position: absolute;
+  top: 659px;
+  left: 50px;
+  top: 659px;
+  left: 417px;
+}
+.theatre-info .more{
+  position: absolute;
+  top: 649px;
+  left: 1073px;
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.48px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: rgba(40, 40, 40, 1);
+  border-bottom: 2px solid rgba(40, 40, 40, 1);
+  box-sizing: border-box;
+  padding-bottom: 2px;
+}
+.white-background{
+  position: absolute;
+  width: 1280px;
+  height: 633px;
+  top: 720px;
+  background-color: white;
+}
+.prev .info{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+.prev .date, .prev .rate{
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.71px;
+}
+.prev .date{
+  display: inline-block;
+  position: absolute;
+  top: 29px;
+  left: 28px;
+  padding: 5px 10px;
+  border-radius: 14px;
+  background-color: rgba(250, 67, 75, 1);
+}
+.prev .rate{
+  color: black;
+  position: absolute;
+  top: 29px;
+  left: 156px;
+  padding: 5px 10px;
+  background-color: rgba(239, 239, 239, 1);
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.prev .name{
+  position: absolute;
+  top: 337px;
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 30px;
+  text-align: left;
+}
+.prev .desk{
+  position: absolute;
+  top: 377px;
+  left: 28px;
+  width: 279px;
+  height: 48px;
+  font-family: SF Pro Display;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(199, 199, 199, 1);
+}
+.slider-pos{
+  position: absolute;
+  top: 853px;
+  left: 50px;
+  overflow: hidden;
+  width: 1230px;
+}
+.slider {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.prev {
+  display: flex;
+  gap: 20px;
+}
+.slide {
+  flex: 0 0 auto;
+  width: 335px;
+  height: 450px;
+  position: relative;
+}
+.red-background{
+  position: absolute;
+  background-color: rgba(250, 67, 75, 1);
+  width: 1280px;
+  height: 105px;
+  top: 1353px;
+}
+.more-info{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 810px;
+  height: 45px;
+  top: 1383px;
+  left: 235px;
+}
+.more-info button{
+  width: 180px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 22.5px;
+  color: white;
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.48px;
+  letter-spacing: 0.2px;
 }
