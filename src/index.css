@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+p{
+  cursor: default;
+}
 body::-webkit-scrollbar {
   display: none;
 }
@@ -19,6 +22,7 @@ html, body {
 }
 
 body {
+  font-family: SF Pro Display;
   display: flex;
   justify-content: center;
 }
@@ -48,7 +52,6 @@ header .menu{
   left: 145px;
 }
 header .menu p{
-  font-family: SF Pro Display;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -69,7 +72,6 @@ header .menu p{
   top: 378px;
   left: 50px;
   color: white;
-  font-family: SF Pro Display;
   font-size: 72px;
   font-weight: 700;
   line-height: 85.92px;
@@ -84,7 +86,6 @@ header .menu p{
   background-color: white;
 }
 .theatre-info .h{
-  font-family: SF Pro Display;
   font-size: 12px;
   font-weight: 700;
   line-height: 14.32px;
@@ -92,7 +93,6 @@ header .menu p{
   text-align: left;  
 }
 .theatre-info .info{
-  font-family: SF Pro Display;
   font-size: 24px;
   font-weight: 700;
   line-height: 28.64px;
@@ -135,7 +135,6 @@ header .menu p{
   position: absolute;
   top: 649px;
   left: 1073px;
-  font-family: SF Pro Display;
   font-size: 18px;
   font-weight: 600;
   line-height: 21.48px;
@@ -162,7 +161,6 @@ header .menu p{
   width: 100%;
 }
 .prev .date, .prev .rate{
-  font-family: SF Pro Display;
   font-size: 14px;
   font-weight: 600;
   line-height: 16.71px;
@@ -190,7 +188,6 @@ header .menu p{
 .prev .name{
   position: absolute;
   top: 337px;
-  font-family: SF Pro Display;
   font-size: 20px;
   font-weight: 550;
   line-height: 30px;
@@ -202,12 +199,24 @@ header .menu p{
   left: 28px;
   width: 279px;
   height: 48px;
-  font-family: SF Pro Display;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
   color: rgba(199, 199, 199, 1);
+}
+.up-slider-text{
+  position: absolute;
+  width: 395px;
+  height: 43px;
+  top: 770px;
+  left: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.96px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(40, 40, 40, 1);
 }
 .slider-pos{
   position: absolute;
@@ -254,9 +263,85 @@ header .menu p{
   border: 2px solid rgb(255, 255, 255);
   border-radius: 22.5px;
   color: white;
-  font-family: SF Pro Display;
   font-size: 18px;
   font-weight: 600;
   line-height: 21.48px;
   letter-spacing: 0.2px;
+}
+.more-info button:first-child{
+  width: 211px;
+}
+.theatre-news{
+  position: absolute;
+  width: 274px;
+  height: 43px;
+  top: 1508px;
+  left: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.96px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(40, 40, 40, 1);
+}
+.more-news{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 192px;
+  height: 21px;
+  top: 1520px;
+  left: 1038px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.48px;
+  text-align: right;
+}
+.news{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1180px;
+  top: 1581px;
+  left: 50px;
+}
+.nw{
+  position: relative;
+  width: 580px;
+  height: 288px;
+  margin-bottom: 30px;
+}
+.news .heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-top: 20px;
+}
+.name-nw{
+  width: 414px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(30, 32, 31, 1);
+}
+.heading .date{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: right;
+  color: rgba(196, 196, 196, 1);
+}
+.news .desk{
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(134, 131, 127, 1);
 }
