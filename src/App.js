@@ -2,8 +2,18 @@ import News from './components/News';
 import Preview from './components/Preview';
 import logo from './imgs/logo.png'
 import theatre from './imgs/theatre.png'
+import MoreInfo from './components/MoreInfo';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/MoreInfo'); // Переход на страницу "Подробнее"
+    console.log('ИДИ НАХУЙ')
+  };
+
   return (
     <div className="app">
       <header>
@@ -25,7 +35,7 @@ function App() {
         <p className='info2 info'>34 спекталя</p>
         <p className='h3 h'>Абсолютно для всех</p>
         <p className='info3 info'>0+</p>
-        <p className='more'>Узнать подробнее</p>
+        <p className='more' onClick={handleButtonClick}>Узнать подробнее</p>
       </div>
       <div className='white-background'></div>
       <p className='up-slider-text'>Ближайшие премьеры</p>

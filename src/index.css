@@ -10,7 +10,7 @@ p{
 body::-webkit-scrollbar {
   display: none;
 }
-.app {
+.app, .MoreInfo{
   width: 1280px;
   margin: 0 auto; 
   position: relative;
@@ -346,10 +346,111 @@ header .menu p{
   text-align: left;
   color: rgba(134, 131, 127, 1);
 }
-.menu p, .theatre-info .more, .slide, .more-info button, .more-news{
+.menu p, .theatre-info .more, .slide, .more-info button, .more-news, .back{
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-.menu p:hover, .theatre-info .more:hover, .slide:hover, .more-info button:hover, .more-news:hover{
+.menu p:hover, .theatre-info .more:hover, .slide:hover, .more-info button:hover, .more-news:hover, .back:hover{
   transform: scale(1.1);
+}
+.population{
+  position: absolute;
+  top: 42px;
+  left: 50px;
+}
+.population-info{
+  position: absolute;
+  top: 59px;
+  left: 50px;
+}
+.city{
+  position: absolute;
+  top: 42px;
+  left: 210px;
+}
+.time{
+  position: absolute;
+  top: 59px;
+  left: 210px;
+}
+.city2{
+  position: absolute;
+  top: 42px;
+  left: 400px;
+}
+.km{
+  position: absolute;
+  top: 59px;
+  left: 400px;
+}
+.MoreInfo .gray{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.32px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(129, 129, 129, 1);
+}
+.MoreInfo .black{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(40, 40, 40, 1);
+}
+.MoreInfo .back{
+  position: absolute;
+  top: 49px;
+  left: 1139px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.48px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: rgba(40, 40, 40, 1);
+  border-bottom: 2px solid rgba(40, 40, 40, 1);
+  box-sizing: border-box;
+  padding-bottom: 2px;
+}
+.text{
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  width: 582px;
+}
+.change-text{
+  display: flex;
+}
+.change-text p{
+  text-align: center;
+  width: 291px;
+  border-bottom: 2px solid rgba(224, 224, 224, 1);
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+.change-text .active{
+  border-bottom: 2px solid rgba(250, 67, 75, 1);
+}
+.paragraph-content{
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.gray-square{
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  top: 160px;
+  left: 672px;
+  background-color: rgba(231, 231, 232, 1);
+}
+.city{
+  position: absolute;
+  top: 170px;
+  left: 682px;
+  z-index: 2;
 }
