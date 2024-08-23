@@ -309,6 +309,7 @@ header .menu p{
   left: 50px;
 }
 .nw{
+  cursor: pointer;
   position: relative;
   width: 580px;
   height: 288px;
@@ -344,4 +345,11 @@ header .menu p{
   line-height: 16px;
   text-align: left;
   color: rgba(134, 131, 127, 1);
+}
+.menu p, .theatre-info .more, .slide, .more-info button, .more-news{
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.menu p:hover, .theatre-info .more:hover, .slide:hover, .more-info button:hover, .more-news:hover{
+  transform: scale(1.1);
 }
